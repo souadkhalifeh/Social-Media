@@ -6,11 +6,9 @@ const Register = () => {
     <div className="register">
       <div className="card">
         <div className="left">
-          <h1>Lama Social.</h1>
+          <h1>Tawasol</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
-            alias totam numquam ipsa exercitationem dignissimos, error nam,
-            consequatur.
+          Welcome to Tawasol, your social connection platform! Join our vibrant community and connect with friends, share moments, and discover new experiences together. Sign in to start your Tawasol journey today!
           </p>
           <span>Do you have an account?</span>
           <Link to="/login">
