@@ -11,7 +11,6 @@ import Videos from "../../assets/9.png";
 import Messages from "../../assets/10.png";
 import Tutorials from "../../assets/11.png";
 import Courses from "../../assets/12.png";
-import Fund from "../../assets/13.png";
 import { AuthContext } from "../../context/authContext";
 import { useContext } from "react";
 
@@ -77,11 +76,7 @@ const LeftBar = () => {
         </div>
         <hr />
         <div className="menu">
-          <span>Others</span>
-          <div className="item">
-            <img src={Fund} alt="" />
-            <span>Fundraiser</span>
-          </div>
+          
           <div className="item">
             <img src={Tutorials} alt="" />
             <span>Tutorials</span>
