@@ -14,7 +14,7 @@ const Login = () => {
     <div className="login">
       <div className="card">
         <div className="left">
-          <h1>Hello World.</h1>
+          <h1>Tawasol</h1>
           <p>
           Welcome to Tawasol, your social connection platform! Join our vibrant community and connect with friends, share moments, and discover new experiences together. Sign in to start your Tawasol journey today!
           </p>
