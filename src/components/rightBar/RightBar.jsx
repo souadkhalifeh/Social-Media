@@ -103,7 +103,7 @@ const RightBar = () => {
                 alt=""
               />
               <div className="online" />
-              <span>Joanna Cohen</span>
+              <span>Oliver</span>
             </div>
           </div>
           <div className="user">
@@ -113,7 +113,7 @@ const RightBar = () => {
                 alt=""
               />
               <div className="online" />
-              <span>Joanna Cohen</span>
+              <span>Clark</span>
             </div>
           </div>
           <div className="user">
@@ -123,7 +123,7 @@ const RightBar = () => {
                 alt=""
               />
               <div className="online" />
-              <span>Jane Doe</span>
+              <span>Jennifer</span>
             </div>
           </div>
           <div className="user">
@@ -133,7 +133,7 @@ const RightBar = () => {
                 alt=""
               />
               <div className="online" />
-              <span>Jane Doe</span>
+              <span>Chris</span>
             </div>
           </div>
           <div className="user">
@@ -143,7 +143,7 @@ const RightBar = () => {
                 alt=""
               />
               <div className="online" />
-              <span>Jane Doe</span>
+              <span>Laura</span>
             </div>
           </div>
           <div className="user">
@@ -153,7 +153,7 @@ const RightBar = () => {
                 alt=""
               />
               <div className="online" />
-              <span>Jane Doe</span>
+              <span>Carla</span>
             </div>
           </div>
           <div className="user">
@@ -163,37 +163,7 @@ const RightBar = () => {
                 alt=""
               />
               <div className="online" />
-              <span>Jane Doe</span>
-            </div>
-          </div>
-          <div className="user">
-            <div className="userInfo">
-              <img
-                src="https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                alt=""
-              />
-              <div className="online" />
-              <span>Jane Doe</span>
-            </div>
-          </div>
-          <div className="user">
-            <div className="userInfo">
-              <img
-                src="https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                alt=""
-              />
-              <div className="online" />
-              <span>Jane Doe</span>
-            </div>
-          </div>
-          <div className="user">
-            <div className="userInfo">
-              <img
-                src="https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                alt=""
-              />
-              <div className="online" />
-              <span>Jane Doe</span>
+              <span>Marlynn</span>
             </div>
           </div>
         </div>
