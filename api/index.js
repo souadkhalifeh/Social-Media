@@ -15,6 +15,6 @@ app.use("/api/comments",commentRoutes)
 app.use("/api/auth",authRoutes)
 
 
-app.listen(3300,()=>{
+app.listen(3000,()=>{
     console.log("API working!")
 })

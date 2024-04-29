@@ -1,4 +1,5 @@
 import { db } from "../connect.js"
+import bcrypt from "bcrypt";
 
 export const register=(req,res)=>{
     //check user if exits 
