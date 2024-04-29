@@ -4,7 +4,7 @@ import bcrypt from "bcrypt";
 export const register=(req,res)=>{
     //check user if exits 
 
-    const q="SELECT * FROM users WHERE username=?"
+    const q="SELECT * FROM users WHERE username=?";
 
     db.query(q,[req.body.username], (err,data)=>{
         if(err) return res.status(500).json(err)
@@ -12,17 +12,17 @@ export const register=(req,res)=>{
     //crete new user
         //hash password
         const salt= bcrypt.genSaltSync(10);
-        const hashedPassword= bcrypt.HashSync(req.body.password,salt)
+        const hashedPassword= bcrypt.hashSync(req.body.password,salt);
 
-        const q="INSERT INTO users('username','email','password','name') VALUE (?)"
+        const q="INSERT INTO users(username,email,password,name) VALUES (?,?,?,?)";
 
         const values =[
             req.body.username,
             req.body.email,
-            req.body.hashedPassword,
+            hashedPassword,
             req.body.name
         ];
-        db.query(q,[values],(err,data)=>{
+        db.query(q,values,(err,data)=>{
             if(err) return res.status(500).json(err);
             return res.status(200).json("User has been created.");
         })
