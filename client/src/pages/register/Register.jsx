@@ -4,48 +4,72 @@ import "./register.scss";
 import axios from "axios";
 
 const Register = () => {
-  const [inputs, setInputs]=useState({
-    username:"",
-    email:"",
-    password:"",
-    name:"",
+  const [inputs, setInputs] = useState({
+    username: "",
+    email: "",
+    password: "",
+    name: "",
   });
+  const [err, setErr] = useState(null);
 
-  const [err, setErr]=useState(null);
+  const handleChange = (e) => {
+    setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
 
-  const handleChange=e=>{
-    setInputs(prev=>({...prev,[e.target.name]:e.target.value}))
-  }
-  const handleClick = async e=>{
-    e.preventDefault()
+  const handleClick = async (e) => {
+    e.preventDefault();
 
-    try{
-      await axios.post("http://localhost:3000/api/auth/register",inputs);
-    }catch(err){
-      setErr(err.response.data)
+    try {
+      await axios.post("http://localhost:8800/api/auth/register", inputs);
+    } catch (err) {
+      setErr(err.response.data);
     }
   };
-  
+
+  console.log(err)
+
   return (
     <div className="register">
       <div className="card">
         <div className="left">
-          <h1>Tawasol</h1>
+          <h1>Lama Social.</h1>
           <p>
-          Welcome to Tawasol, your social connection platform! Join our vibrant community and connect with friends, share moments, and discover new experiences together. Sign in to start your Tawasol journey today!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
+            alias totam numquam ipsa exercitationem dignissimos, error nam,
+            consequatur.
           </p>
           <span>Do you have an account?</span>
           <Link to="/login">
-          <button>Login</button>
+            <button>Login</button>
           </Link>
         </div>
         <div className="right">
           <h1>Register</h1>
           <form>
-            <input type="text" placeholder="Username" name="username" onChange={handleChange} />
-            <input type="email" placeholder="Email" name="email" onChange={handleChange}/>
-            <input type="password" placeholder="Password"name="password" onChange={handleChange} />
-            <input type="text" placeholder="Name" name="name" onChange={handleChange} />
+            <input
+              type="text"
+              placeholder="Username"
+              name="username"
+              onChange={handleChange}
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              onChange={handleChange}
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              placeholder="Name"
+              name="name"
+              onChange={handleChange}
+            />
             {err && err}
             <button onClick={handleClick}>Register</button>
           </form>
