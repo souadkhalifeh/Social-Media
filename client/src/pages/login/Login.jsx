@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/authContext";
-import axios from "axios";
+
 import "./login.scss";
 
 const Login = () => {
@@ -21,9 +21,10 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3000/api/auth/login", inputs);
+      await login(inputs);
       navigate("/")
     } catch (err) {
+      console.error(err);
       setErr(err.response.data);
     }
   };

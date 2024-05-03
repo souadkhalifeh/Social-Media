@@ -15,7 +15,8 @@ const Register = () => {
 
   const handleChange=e=>{
     setInputs(prev=>({...prev,[e.target.name]:e.target.value}))
-  }
+  };
+  console.log(inputs);
   const handleClick = async e=>{
     e.preventDefsult()
 
