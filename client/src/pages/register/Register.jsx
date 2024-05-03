@@ -15,13 +15,12 @@ const Register = () => {
 
   const handleChange=e=>{
     setInputs(prev=>({...prev,[e.target.name]:e.target.value}))
-  };
-  console.log(inputs);
+  }
   const handleClick = async e=>{
-    e.preventDefsult()
+    e.preventDefault()
 
     try{
-      await axios.post("http//localhost:3000/api/auth/register",inputs);
+      await axios.post("http://localhost:3000/api/auth/register",inputs);
     }catch(err){
       setErr(err.response.data)
     }

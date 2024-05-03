@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "name": "social-media",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/souadkhalifeh/Social-Media.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/souadkhalifeh/Social-Media/issues"
+  },
+  "homepage": "https://github.com/souadkhalifeh/Social-Media#readme",
+  "description": ""
+}
